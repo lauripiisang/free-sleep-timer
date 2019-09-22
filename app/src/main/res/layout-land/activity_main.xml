@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4"
+    android:backgroundTint="#161616"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/set_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#A5D6A7"
+        android:text="Set Sleep Timer"
+        android:textColor="#222222"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.349"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timer_mins"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="128dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Duration (minutes)"
+        android:textColor="#E0F2F1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Duration (minutes)"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/timer_sub"
+        android:layout_width="42dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#E0F2F1"
+        android:text="+5"
+        android:textColor="#111111"
+        app:layout_constraintEnd_toStartOf="@+id/timer_mins"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="+5" />
+
+    <Button
+        android:id="@+id/timer_add"
+        android:layout_width="42dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="160dp"
+        android:backgroundTint="#E0F2F1"
+        android:text="-5"
+        android:textColor="#0E0E0E"
+        app:layout_constraintStart_toEndOf="@+id/timer_mins"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="-5" />
+
+    <EditText
+        android:id="@+id/timer_mins"
+        android:layout_width="66dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="332dp"
+        android:layout_marginTop="160dp"
+        android:backgroundTint="#E0F2F1"
+        android:digits="true"
+        android:editable="true"
+        android:ems="10"
+        android:enabled="true"
+        android:hint="10"
+        android:inputType="numberDecimal"
+        android:numeric="integer"
+        android:textAlignment="center"
+        android:textColor="#E0F2F1"
+        android:textColorHint="#FFFFFF"
+        android:textCursorDrawable="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

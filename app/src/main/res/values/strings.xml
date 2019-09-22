@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Free Sleep Timer</string>
+
+    <string name="timer_notification_title_template">Timer: %1$s</string>
+</resources>
