@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity() {
             val cancelPendingIntent: PendingIntent =
                 PendingIntent.getBroadcast(it.context, 555, cancelIntent, 0)
 
-            val timeOut = inputTimerMins * 1000L
+            val timeOut = inputTimerMins * 60 * 1000L
             val notification = createNotification(it, strDate, cancelPendingIntent, timeOut)
 
             alarmMgr = getSystemService(Context.ALARM_SERVICE) as AlarmManager
